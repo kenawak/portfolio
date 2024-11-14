@@ -3,25 +3,29 @@
     margin: 0 auto;
     padding: 20px;
     background-color: #121212;
+
     }
   
   .contact-form h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
   }
   
   .form-group {
     display: flex;
     margin-bottom: 15px;
+    text-align: left;
+    margin-right: auto;
   }
   
   .form-group label {
-    margin-right: 25px;
+    width: 108px;
+    /* margin-right: 25px; */
   }
   
   .form-group input,
   .form-group textarea {
-    width: 100%;
+    min-width: 400px;
     padding: 8px;
     color: white;
     background-color: #29292a;
