@@ -1,5 +1,10 @@
 import React from 'react'
 import "./styles/Header.css"
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
 import photo from "../assets/kena.jpg"
 const Header = () => {
   return (
@@ -12,13 +17,19 @@ const Header = () => {
             </div>
             <div className='icon-links'>
                 <a href="https://youtube.com/" target='_blank'>
-                <i className='fab fa-youtube'></i>
+                <FaGithub/>
                 </a>
                 <a href="https://youtube.com/" target='_blank'>
-                <i className='fab fa-telegram'></i>
+                <CiLinkedin/>
                 </a>
                 <a href="https://t.me/kenawak_ibsa" target='_blank'>
-                <i className='fab fa-twitter'></i>
+                <FaFacebookF/>
+                </a>
+                <a href="https://t.me/kenawak_ibsa" target='_blank'>
+                <FaTelegramPlane/>
+                </a>
+                <a href="https://t.me/kenawak_ibsa" target='_blank'>
+                <FaXTwitter/>
                 </a>
             </div>
         </div>

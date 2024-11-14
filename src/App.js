@@ -1,11 +1,12 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Header from './components/Header';
 import Services from './components/Services';
 import './App.css';
 import Card from './components/Card';
 import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 import image1 from './assets/images (2).jpeg'; 
 import image2 from './assets/download.jpeg'; 
 import image3 from './assets/download (1).jpeg';
@@ -54,24 +55,14 @@ function App() {
 ];
 
   return (
-    <Router>
     <div className="App">
-      <nav>
-        <ul>
-          <li>
-            <Link to="/about"/>Who's Me</Link>
-          </li>
-          <li><Link to="/services"/>Projects</li>
-          <li><Link to="/projects"/>Who's Me</li>
-        </ul>
-      </nav>
       <Header />
       <AboutMe />
       <Card items={cookingItems} />
       <Services items={serviceItems} />
       <Projects items={projectItems} />
+      <Contact />
     </div>
-    </Router>
   );
 }
 
